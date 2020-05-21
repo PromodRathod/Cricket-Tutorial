@@ -1,0 +1,150 @@
+{% load static from staticfiles %}
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'bg.css' %}">
+	<style>
+
+	.card1 {
+  margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1500px;
+  margin-left:50px;
+  background-color: white; opacity: 0.8;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+  float: left;
+}
+
+.container {
+  padding: 16px;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.main {
+  max-width: auto;
+  margin-left: 50px;;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  margin-left :30px;
+  margin-right :50px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+	</style>
+</head>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif; background-repeat: no-repeat;  background-attachment: fixed;2">
+
+<div class="card1">
+<div class="container">
+
+
+<div class="main">
+<div class="row">
+  <a href="https://www.cricketnswcoaching.com/ContentItem?cnid=581" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '1.jpg' %}" style="width:100%">
+      <h3>100's of cricket skill and exercise videos</h3>
+      <p>This video gives you a taste of what you can access.</p>
+    </div>
+  </div>
+    </a>
+
+
+	<a href="https://www.cricketnswcoaching.com/ContentItem?cnid=293" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '2.jpg' %}" style="width:100%">
+      <h3>On drive</h3>
+      <p>Having the ability to hit down the ground will present the full width of the bat to straight deliveries. This 2.43 minute video discusses shot selection and tips for the on drive.</p>
+    </div>
+  </div>
+    </a>
+
+
+	<a href="https://www.cricketnswcoaching.com/ContentItem?cnid=605" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '3.jpg' %}" style="width:100%">
+      <h3>Commit late when ball swinging</h3>
+	  <p>This video explains one method on how batsmen can counter swinging deliveries.</p>
+    </div>
+  </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+
+	<br><br>
+<div class="card1">
+<div class="container">
+
+
+<div class="main">
+<div class="row">
+	<a href="https://www.cricketnswcoaching.com/ContentItem?cnid=411" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '4.jpg' %}" style="width:100%">
+      <h3>Phil Jaques - Plan vs premeditate</h3>
+	  <p>In this video current CricketNSW Head Coach Phil Jaques discusses premeditating versus having a plan.</p>
+    </div>
+  </div>
+    </a>
+
+
+	<a href="https://www.cricketnswcoaching.com/ContentItem?cnid=587" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '5.jpg' %}" style="width:100%">
+      <h3>Remedies for bowling short, Steve O'Keefe</h3>
+	  <p>In this video Steve O'Keefe offers a few remedies when bowling too short</p>
+    </div>
+  </div>
+    </a>
+
+
+	<a href="https://www.cricketnswcoaching.com/ContentItem?cnid=240" style="color:black;">
+
+  <div class="column">
+    <div class="content">
+      <img src="{% static '6.jpg' %}" style="width:100%">
+      <h3>Sweep options batting drill</h3>
+	  <p>This video demonstrates an exercise which develops all the sweeps and options for limited overs cricket.</p>
+    </div>
+  </div>
+    </a>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+</body>
+</html>

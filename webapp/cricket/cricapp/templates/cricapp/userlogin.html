@@ -1,0 +1,108 @@
+{% load static from staticfiles %}
+
+<!doctype html>
+<html>
+<head>
+<title>About Play Ball</title>
+         <link rel="stylesheet" href="{% static 'bg.css' %}">
+
+<style>
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+
+#logout {
+  top: 20px;
+  background-color: lightgreen;
+  color: black;
+}
+
+#tuto {
+  top: 80px;
+  background-color: orange;
+  color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left:100px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+</style>
+
+</head>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif">
+<div id="mySidenav" class="sidenav">
+  <a href="{% url 'user' %}" id="logout">LogOut</a>
+</div>
+<br>
+<div id="mySidenav" class="sidenav">
+  <a href="{% url 'tutorials' %}" id="tuto">Tutorials</a>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<center>
+<div class="card">
+<div style="margin:25px">
+<br>
+<center>
+    <h1>	<u><span style="color:blue">User Profile</span></u></h1>
+<table border=3>
+    <tr><td>Name</td>
+        <td>Kluas</td></tr>
+    <tr><td>Age</td>
+        <td>24</td></tr>
+    <tr><td>Sex</td>
+        <td>Male</td></tr>
+    <tr><td>State</td>
+        <td>Bangalore</td></tr>
+    <tr><td>Country</td>
+        <td>India</td></tr>
+    <tr><td>Address</td>
+        <td>#10 Bensor Town, Bangalore</td></tr>
+    <tr><td>Phone Number</td>
+        <td>9852476132</td></tr>
+    <tr><td>Batting Style</td>
+        <td>Right Handed Batsman</td></tr>
+    <tr><td>Bowling Style</td>
+        <td>Right Handed Bowler</td></tr>
+<br><br>
+</table>
+</center>
+    <br><br>
+</div></div>
+</center>
+<br><br>
+<div class="card">
+<div style="margin:25px">
+<br>
+    <form action='/usercal/'>
+        Enter a value in mph : <input type="text" name="dy" placeholder="Speed"><br><br>
+<button type="submit" class="submit">Calculate</button>
+
+</form>
+<br><br>
+</div></div>
+
+</body>
+</html>
+

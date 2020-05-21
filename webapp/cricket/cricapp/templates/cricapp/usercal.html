@@ -1,0 +1,58 @@
+{% load static from staticfiles %}
+
+<!doctype html>
+<html>
+<head>
+<title>About Play Ball</title>
+         <link rel="stylesheet" href="{% static 'bg.css' %}">
+
+<style>
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+
+#home {
+  top: 20px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1500px;
+  margin-left:100px;
+  margin-right:100px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+</style>
+
+</head>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif">
+
+<div class="card">
+<div style="margin:25px">
+<br>
+<h1> KMPH : {{status}} </h1>
+<br><br>
+</div></div>
+
+</body>
+</html>
+
