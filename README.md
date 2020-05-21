@@ -1,2 +1,2 @@
 # Cricket-Tutorial
-Developed using Django Framework
+Developed using Django Framework and conains python, html and css codes
